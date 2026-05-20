@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>偶数奇数サイコロゲーム</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main class="container">
+      <h1>偶数奇数サイコロゲーム</h1>
+      <p class="description">サイコロの出目が偶数か奇数かを予想して当てよう！</p>
+
+      <div class="buttons" role="group" aria-label="予想を選ぶ">
+        <button id="evenBtn" type="button">偶数を予想</button>
+        <button id="oddBtn" type="button">奇数を予想</button>
+      </div>
+
+      <section class="result" aria-live="polite">
+        <p>出目: <strong id="diceValue">-</strong></p>
+        <p>判定: <strong id="judge">-</strong></p>
+        <p id="message">ボタンを押してスタート！</p>
+      </section>
+
+      <section class="score">
+        <p>勝ち: <span id="wins">0</span></p>
+        <p>負け: <span id="losses">0</span></p>
+      </section>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
